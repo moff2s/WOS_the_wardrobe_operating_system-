@@ -1,10 +1,10 @@
 # WOS: The Wardrobe Operating System
 
-A C++ console app that manages a wardrobe using custom data structures: clothing items, outfits, occasions, sorting, undo, and a queue that tracks what to wear next.
+A C++ desktop app with a graphical interface for managing a wardrobe using custom data structures: clothing items, outfits, occasions, sorting, undo, and a queue that tracks what to wear next.
 
 ## Features
 
-- **Clothing items:** store and manage individual pieces
+- **Clothing items:** add and manage individual pieces
 - **Outfits:** combine items into outfits
 - **Occasions:** tag outfits by occasion
 - **Wear queue:** rotate what you wear so nothing gets forgotten
@@ -16,7 +16,7 @@ A C++ console app that manages a wardrobe using custom data structures: clothing
 
 | File | Purpose |
 |------|---------|
-| `main.cpp` | Program entry point |
+| `main.cpp` | Program entry point and GUI |
 | `ClothingItem.h` | Clothing item class |
 | `Outfit.h` | Outfit class |
 | `Occasion.h` | Occasion definitions |
@@ -24,19 +24,19 @@ A C++ console app that manages a wardrobe using custom data structures: clothing
 | `WearQueue.h` / `WearQueue.cpp` | Queue for wear rotation |
 | `Sorting.h` / `Sorting.cpp` | Sorting functions |
 | `UndoStack.h` / `UndoStack.cpp` | Undo stack |
-| `assets/` | Project assets |
+| `assets/` | Images and other GUI assets |
 | `CMakeLists.txt` | Build configuration |
 
 ## Build and Run
 
-Requires CMake and a C++ compiler.
+Requires CMake, a C++ compiler, and [GUI LIBRARY].
 
     mkdir build
     cd build
     cmake ..
     cmake --build .
 
-Then run the generated executable from the `build` folder.
+Then run the generated executable. Keep the `assets/` folder next to it.
 
 ## Team
 
